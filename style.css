@@ -17,7 +17,6 @@ button {
   border: none;
   padding: 8px 0;
   border-radius: 19px;
-  font-size: large;
 
   transition: 0.2s;
 }
@@ -52,8 +51,6 @@ body {
   flex-direction: column;
   align-items: center;
   height: 300px;
-
-  width: 400px;
 }
 
 h1 {
@@ -84,4 +81,25 @@ img {
 
   margin: 0 auto;
   max-width: 400px;
+}
+
+@media (max-width: 720px) {
+  .containerPicture {
+    max-width: 300px;
+    height: 200px;
+  }
+
+  body {
+    font-size: 60%;
+  }
+
+  img {
+    height: 80px;
+  }
+  .sectionA {
+    max-width: 200px;
+  }
+  .sectionB {
+    max-width: 200px;
+  }
 }
