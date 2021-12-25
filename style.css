@@ -13,10 +13,13 @@ main {
 button {
   width: 80%;
   height: 42px;
+  text-align: center;
   background: rgb(197, 197, 18);
   border: none;
   padding: 8px 0;
   border-radius: 19px;
+  font-weight: bold;
+  font-size: 1rem;
 
   transition: 0.2s;
 }
@@ -69,6 +72,8 @@ img {
 }
 
 .sectionA {
+  display: flex;
+  justify-content: center;
   margin: 0 auto;
   max-width: 400px;
 }
@@ -87,19 +92,15 @@ img {
   .containerPicture {
     max-width: 300px;
     height: 200px;
+    margin-bottom: 16px;
+    font-size: 0.8rem;
   }
 
-  body {
-    font-size: 60%;
+  main {
+    width: 100%;
+    max-width: 90%;
   }
-
   img {
-    height: 80px;
-  }
-  .sectionA {
-    max-width: 200px;
-  }
-  .sectionB {
-    max-width: 200px;
+    height: 100px;
   }
 }
