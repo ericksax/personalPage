@@ -6,33 +6,43 @@
 
 html {
   font-family: "Press Start 2P", Arial, Helvetica, sans-serif;
+  height: 100%;
 }
 
 body {
   color: aliceblue;
   background-color: #191622;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card {
+  margin: 6rem auto;
+  height: 600px;
 }
 
 main {
   margin: auto;
-  height: 100vh;
+  padding: 20px;
   width: 400px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 2px #80808052;
 }
 
 button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 90%;
+  width: 100%;
   border: none;
   padding: 1rem 0;
   border-radius: 8px;
   font-family: inherit;
   font-weight: 400;
   font-size: 0.8rem;
+  letter-spacing: 1px;
 
   transition: 0.2s;
-  letter-spacing: 1px;
 }
 
 button img {
@@ -65,14 +75,51 @@ button + button {
   flex-direction: column;
   align-items: center;
   height: 300px;
-  margin: 5rem 0 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.sectionPhoto {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.sectionPhoto .socialMedia {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  opacity: 0.5;
+  border: 0;
+  padding: 0;
+  background: transparent;
+
+  transition: all 0.2s ease-in-out;
+}
+
+.socialMedia:hover {
+  cursor: pointer;
+  opacity: 1;
+  transform: scale(1.2);
+}
+
+.sectionPhoto::before {
+  position: absolute;
+  content: "";
+  background-color: #80808049;
+  width: 100%;
+  height: 50%;
+  border-radius: 20px 20px 0 0;
 }
 
 h1 {
   margin: 24px 0;
+  font-size: 1.2rem;
 }
 
 p {
+  font-size: 0.8rem;
   color: #79797e;
   margin-top: 0px;
 }
@@ -80,7 +127,11 @@ p {
 .sectionA img {
   height: 150px;
   border-radius: 50%;
-  border: solid 4px rgb(217, 247, 83);
+  border: solid 4px #80808049;
+  z-index: 5;
+  padding: 5px;
+  background: #191622;
+  /* background: rgb(217, 247, 83); */
 }
 
 .sectionA {
@@ -100,25 +151,7 @@ p {
 }
 
 @media (max-width: 720px) {
-  .containerPicture {
-    max-width: 300px;
-    height: 200px;
-    margin-bottom: 16px;
-    font-size: 0.8rem;
-    margin: 8rem 0 4rem;
-  }
-
-  button {
-    padding: 0;
-    max-height: 4rem;
-  }
-
   main {
-    width: 100%;
     max-width: 90%;
-  }
-
-  img {
-    height: 100px;
   }
 }
