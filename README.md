@@ -5,5 +5,5 @@
 
 It's simple. Is a page that takes you to my github and linkedin profiles.
 
-This project was made with a litle html, css, javascript tecnologies and is hosted at <a href="erickfreitas.tk" target="_blank">erickfreitas.tk</a>
+This project was made with a litle html, css, javascript tecnologies and is hosted at <a href="http://erickfreitas.tk" target="_blank">erickfreitas.tk</a>
 
